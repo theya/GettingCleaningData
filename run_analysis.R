@@ -112,7 +112,7 @@ tidyDT <- tinyDT[, list(count = .N, average = mean(value)), by=key(fullDT)]
 
 
 ## 9. Saving the final data set in a .csv format
-newPath <- file.path(path, "HumanActivityRecognition.csv")
+newPath <- file.path(path, "HARUS-tidy-dataset.csv")
 write.table(tidyDT, newPath, quote = FALSE, sep = ",", row.names = FALSE)
 
 
