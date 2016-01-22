@@ -27,11 +27,12 @@ From the data set in step 4, creates a second, independent tidy data set with th
 
 Please read CodeBook.md for more details about the analysis.
 
-The outputs at this analysis are:
+The output of this analysis is: [HARUS-tidy-dataset.txt](https://github.com/theya/GettingCleaningData/blob/master/HARUS-tidy-dataset.txt)
 
-* HARUS-tidy-dataset.csv
-* run_analysis.R
-* CodeBook.md
+The following files run and explain the analysis:
+
+* [run_analysis.R](https://github.com/theya/GettingCleaningData/blob/master/run_analysis.R)
+* [CodeBook.md](https://github.com/theya/GettingCleaningData/blob/master/CodeBook.md)
 
 
 ## Installation
