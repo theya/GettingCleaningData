@@ -309,12 +309,12 @@ Create a clean tiny data set first.
 
 ### 9. Saving final data set
 
-Save the tidy data set in a .csv format to be able to read it easily in the future.
+Save the tidy data set in a .txt format to be read in the future.
 
-	newPath <- file.path(path, "HARUS-tidy-dataset.csv")
+	newPath <- file.path(path, "HARUS-tidy-dataset.txt")
 	write.table(tidyDT, newPath, quote = FALSE, sep = ",", row.names = FALSE)
 	
-	## > file.exists("HARUS-tidy-dataset.csv")
+	## > file.exists("HARUS-tidy-dataset.txt")
 	## [1] TRUE
 
 
