@@ -108,10 +108,12 @@ setkey(fullDT, subjectNo, activityName)
 tinyDT <- data.table(melt(fullDT, key(fullDT), variable.name = "featureLabel"))
 
 ## And creating the final tidy data set
-tidyDT <- tinyDT[, list(count = .N, average = mean(value)), by=key(fullDT)]
+## with the average of each variable for each activity and each subject
+setkey(tinyDT, subjectNo, activityName, featureLabel)
+tidyDT <- tinyDT[, list(count = .N, average = mean(value)), by=key(tinyDT)]
 
 
-## 9. Saving the final data set in a .csv format
+## 9. Saving the final data set in a .txt format
 newPath <- file.path(path, "HARUS-tidy-dataset.txt")
 write.table(tidyDT, newPath, quote = FALSE, sep = "\t", row.names = FALSE)
 
